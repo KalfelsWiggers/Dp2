@@ -8,7 +8,41 @@
 
 </head>
 <body>
+    
     <button onclick="Calcular();"> OK </button>
     <div id="resultado"> </div>
+
 </body>
+<script>
+    function Calcular()
+    {
+        n1 = -1;
+        while (n1 < 0)
+        {
+            n1 = prompt("DIGITE N1:");
+            n1 = parseFloat(n1);
+            if (n1 < 0)
+            {
+                alert("VALOR INVÁLIDO");
+            }
+        }
+        
+        n2 = -2;
+        while (n2 < 0)
+        {
+            n2 = prompt("DIGITE N2:");
+            n2 = parseFloat(n2);
+            if (n2 < 0)
+            {
+                alert("VALOR INVÁLIDO");
+            }
+        }
+            
+        if (n1>=0 && n2>=0)
+        {
+            resultado.innerHTML = n1 + n2;
+
+        }
+    }
+</script>
 </html>
