@@ -20,6 +20,10 @@
         while (n1 < 0)
         {
             n1 = prompt("DIGITE N1:");
+            if (n1 == "")
+            {
+                n1 = -1;
+            }
             n1 = parseFloat(n1);
             if (n1 < 0)
             {
@@ -31,6 +35,10 @@
         while (n2 < 0)
         {
             n2 = prompt("DIGITE N2:");
+            if (n2 == "")
+            {
+                n2 = -1;
+            }
             n2 = parseFloat(n2);
             if (n2 < 0)
             {
